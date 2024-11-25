@@ -11,7 +11,7 @@ This website serves as the online presence for Warriors and Wild Things Yoga, sh
 ### Prerequisites
 
 - Node.js (v18 or higher)
-- npm or yarn
+- pnpm 
 - Vercel CLI (optional for local development)
 
 ### Getting Started
@@ -102,5 +102,5 @@ warriors-and-wild-things/
 For any questions or issues, please contact:
 
 - Holly deQuevedo (Owner)
-- Alex deQuevedo (CTO) Warriors & Wild things
+- Alex deQuevedo (CTO and lover) Warriors & Wild things
 - Eric deQuevedo (Tech Support / front end)
