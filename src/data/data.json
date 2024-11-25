@@ -1,0 +1,141 @@
+{
+  "Header": {
+    "title": "Warriors and Wildthings Yoga",
+    "motto": "Find Your Inner Peace.",
+    "paragraph": "At Warriors and Wildthings Yoga, we believe in the transformative power of yoga. Our mission is to provide a welcoming space where you can explore the harmony of body, mind, and spirit."
+  },
+  "About": {
+    "title": "About Us",  
+    "paragraph": "Warriors and Wildthings Yoga is a vibrant community dedicated to the practice of yoga. We offer a diverse range of classes suitable for all levels, from beginner to advanced. Our experienced teachers are passionate about guiding you on your yoga journey, helping you cultivate strength, flexibility, and inner peace.",
+    "Why": [
+      "Experienced and certified yoga instructors.",
+      "A wide variety of yoga styles to suit every preference.",
+      "Welcoming and inclusive yoga community.",
+      "Modern and well-equipped yoga studio."  
+    ],
+    "Why2": [
+      "Regular workshops and events to deepen your practice.",
+      "Meditation and mindfulness classes for mental well-being.",  
+      "Affordable pricing and flexible membership options.",
+      "Eco-friendly yoga mats and props available."
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Serene Studio Space",
+      "largeImage": "/studio-space.webp", 
+      "smallImage": "/studio-space-thumb.webp",
+      "alt": "Serene yoga studio space"
+    },
+    {
+      "title": "Vinyasa Flow Class",
+      "largeImage": "/vinyasa-class.webp",
+      "smallImage": "/vinyasa-class-thumb.webp", 
+      "alt": "Vinyasa flow yoga class"
+    },
+    {
+      "title": "Meditation Session",
+      "largeImage": "/meditation.webp",
+      "smallImage": "/meditation-thumb.webp",
+      "alt": "Group meditation session" 
+    },
+    {
+      "title": "Yoga Retreat",
+      "largeImage": "/yoga-retreat.webp",
+      "smallImage": "/yoga-retreat-thumb.webp",
+      "alt": "Yoga retreat in nature"
+    },
+    {
+      "title": "Yoga Community",
+      "largeImage": "/yoga-community.webp",
+      "smallImage": "/yoga-community-thumb.webp",
+      "alt": "Supportive yoga community"  
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-lotus",
+      "name": "Vinyasa Yoga",
+      "text": "Flowing sequences that link breath with movement."
+    },
+    {
+      "icon": "fa fa-spa",
+      "name": "Restorative Yoga",  
+      "text": "Gentle poses held for deep relaxation and stress relief."
+    },
+    {
+      "icon": "fa fa-yin-yang",
+      "name": "Yin Yoga",
+      "text": "Slow-paced style targeting connective tissues and joints."
+    },
+    {  
+      "icon": "fa fa-om",
+      "name": "Meditation Classes",
+      "text": "Guided sessions to cultivate mindfulness and inner peace."
+    },
+    {
+      "icon": "fa fa-hiking",  
+      "name": "Yoga Retreats",
+      "text": "Immersive experiences in beautiful natural settings."
+    }
+  ],
+  "Testimonials": [
+    {
+      "name": "Sarah P.",
+      "img": "https://example.com/sarah-p.jpg",
+      "text": "Warriors and Wildthings Yoga has transformed my life. The teachers are amazing and the community is so supportive."  
+    },
+    {
+      "name": "Michael K.",
+      "img": "https://example.com/michael-k.jpg",
+      "text": "I never thought yoga was for me, but this studio changed my mind. I feel stronger, more flexible, and less stressed."
+    }, 
+    {
+      "name": "Emily L.",
+      "img": "https://example.com/emily-l.jpg",
+      "text": "The yoga retreats are incredible. It's the perfect way to deepen your practice and connect with like-minded people."
+    }
+  ], 
+  "Team": [
+    {
+      "img": "https://example.com/julia-s.jpg",
+      "name": "Julia S.",
+      "job": "Founder & Lead Instructor"
+    }
+  ],
+  "Contact": {
+    "Title": "Contact Us",
+    "paragraph": "Have a question about our classes or want to become a member? Get in touch with us today! We'd love to hear from you.",
+    "phonedis": "Call us",
+    "phone": "4043551175",
+    "email": "namaste@warriorsandwildthings.com",
+    "Instagram": "@warriorsandwildthings" 
+  },
+  "Features": [
+    {
+      "icon": "fa fa-area-chart",
+      "title": "For All Levels",
+      "text": "Classes designed for yogis of every experience level."
+    },
+    {
+      "icon": "fa fa-heartbeat",
+      "title": "Mind-Body Health",
+      "text": "Holistic approach to physical and mental well-being." 
+    },
+    {
+      "icon": "fa fa-globe",
+      "title": "Diverse Styles",
+      "text": "Explore a wide range of yoga traditions and practices."
+    },
+    {
+      "icon": "fa fa-users", 
+      "title": "Supportive Community",
+      "text": "A welcoming space to connect with fellow yogis."
+    }
+  ],
+  "Footer": {
+    "text": "Join our vibrant yoga community and embark on a journey of self-discovery. Contact us to learn more about our classes and memberships.",
+    "phone": "(404) 355-1175",
+    "email": "namaste@warriorsandwildthings.com" 
+  }
+}
