@@ -34,7 +34,6 @@ export default function Home() {
         keywords="Yoga, Atlanta, Warriors and Wildthings, Meditation, Mindfulness, Asana, Vinyasa, Hatha, Yin, Restorative, Yoga Studio, Yoga Classes, Yoga Workshops, Yoga Retreats, Yoga Teacher Training, Yoga Community, Wellness, Fitness, Health, Inner Peace, Balance, Harmony, Mind-Body Connection, Chakras, Pranayama, Yoga Philosophy, Yoga Lifestyle, Yoga Therapy, Yoga for Beginners, Advanced Yoga, Yoga Poses, Yoga Sequences, Yoga Inspiration, Yoga Quotes, Yoga Music, Yoga Accessories, Yoga Mats, Yoga Props, Yoga Blocks, Yoga Straps, Yoga Bolsters, Yoga Blankets, Yoga Clothing, Yoga Apparel, Yoga Pants, Yoga Tops, Yoga Bras, Yoga Socks, Yoga Towels, Yoga Bags"
       />
 
-
       {/* Background Image */}
       <Box
         bgImage="url('/yoga-bg.webp')"
@@ -46,10 +45,10 @@ export default function Home() {
         flexDirection="column"
       >
         <AnimateSection>
-<Navigation />
-</AnimateSection>
+          <Navigation />
+        </AnimateSection>
         {/* Header Crown */}
-        
+
         <AnimateSection>
           <Header data={data.Header} />
         </AnimateSection>

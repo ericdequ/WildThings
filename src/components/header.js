@@ -117,7 +117,6 @@ export default function Header({ data }) {
         >
           {data.paragraph}
         </MotionText>
-
       </MotionBox>
     </MotionBox>
   );

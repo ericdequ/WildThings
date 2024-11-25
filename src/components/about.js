@@ -17,7 +17,10 @@ const MotionText = motion(Text);
 const MotionImage = motion(Image);
 
 const About = ({ data }) => {
-  const bgColor = useColorModeValue("rgba(255, 255, 255, 0.9)", "rgba(26, 32, 44, 0.9)");
+  const bgColor = useColorModeValue(
+    "rgba(255, 255, 255, 0.9)",
+    "rgba(26, 32, 44, 0.9)",
+  );
   const textColor = useColorModeValue("gray.800", "white");
   const accentColor = useColorModeValue("#8B4513", "#F5DEB3");
 
@@ -84,15 +87,28 @@ const About = ({ data }) => {
               </MotionText>
             </MotionFlex>
 
-            <MotionText color={textColor} fontSize={{ base: "lg", md: "xl" }} variants={itemVariants}>
+            <MotionText
+              color={textColor}
+              fontSize={{ base: "lg", md: "xl" }}
+              variants={itemVariants}
+            >
               {data.paragraph}
             </MotionText>
 
             <MotionFlex direction="column" mt={4} variants={itemVariants}>
               {data.Why.map((item, index) => (
-                <MotionFlex key={index} alignItems="center" mb={4} whileHover={{ translateX: 10 }}>
+                <MotionFlex
+                  key={index}
+                  alignItems="center"
+                  mb={4}
+                  whileHover={{ translateX: 10 }}
+                >
                   <Icon as={FaOm} color={accentColor} fontSize="xl" mr={3} />
-                  <Text color={textColor} fontSize={{ base: "md", md: "lg" }} fontWeight="medium">
+                  <Text
+                    color={textColor}
+                    fontSize={{ base: "md", md: "lg" }}
+                    fontWeight="medium"
+                  >
                     {item}
                   </Text>
                 </MotionFlex>

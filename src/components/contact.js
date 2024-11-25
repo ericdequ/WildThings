@@ -97,8 +97,6 @@ const Contact = (props) => {
         </MotionBox>
 
         <VStack spacing={8} w="full" py={12} px={8}>
-         
-
           <HStack spacing={6} justifyContent="center" flexWrap="wrap">
             <Link href={`tel:${props.data?.phone || ""}`}>
               <MotionButton

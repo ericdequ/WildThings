@@ -22,7 +22,12 @@
 body {
   color: rgb(var(--foreground-rgb));
   font-family: "Monotype Corsiva", sans-serif;
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
 html {
@@ -41,7 +46,11 @@ html {
 }
 
 /* Yoga-inspired fonts */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Ananda Namaste", cursive;
 }
 
@@ -54,7 +63,7 @@ h2 {
 }
 h3 {
   font-size: 24px;
-  font-weight: 600; 
+  font-weight: 600;
   color: #333;
 }
 h4 {
@@ -74,24 +83,25 @@ p {
 
 /* Earthy color palette */
 a {
-  color: #8B4513; /* Saddle brown */
+  color: #8b4513; /* Saddle brown */
   font-weight: 400;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #8B4513;
+  color: #8b4513;
 }
 
 /* Lotus flower bullet points */
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 ul li::before {
   content: "\2638"; /* Lotus flower symbol */
   color: #055401;
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
@@ -99,20 +109,20 @@ ul li::before {
 /* Bamboo-style hr */
 hr {
   height: 2px;
-  width: 70px;  
+  width: 70px;
   text-align: center;
   position: relative;
-  background: linear-gradient(to right, #8B5A2B, #FFF8DC, #8B5A2B);
+  background: linear-gradient(to right, #8b5a2b, #fff8dc, #8b5a2b);
   margin: 0 auto 20px;
   border: 0;
 }
 
 /* Rustic buttons */
 .btn-custom {
-  font-family: "Ananda Namaste", cursive;  
+  font-family: "Ananda Namaste", cursive;
   text-transform: uppercase;
   color: #fff;
-  background-color: #8B4513;
+  background-color: #8b4513;
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -123,31 +133,39 @@ hr {
   border: 0;
 }
 .btn-custom:hover,
-.btn-custom:focus,    
+.btn-custom:focus,
 .btn-custom.focus,
 .btn-custom:active,
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #D2691E; /* Chocolate */
+  background-color: #d2691e; /* Chocolate */
 }
 
 /* Muted earth tones for sections */
 #services {
-  background: #F5DEB3; /* Wheat */  
+  background: #f5deb3; /* Wheat */
 }
 
 #contact {
-  background: linear-gradient(to right, #D2B48C, #DEB887); /* Tan to burlywood */
+  background: linear-gradient(
+    to right,
+    #d2b48c,
+    #deb887
+  ); /* Tan to burlywood */
 }
 
 #portfolio {
-  background: #F0E68C; /* Khaki */
+  background: #f0e68c; /* Khaki */
 }
 
 /* Yoga pose images */
 .hover-bg .hover-text {
-  background: linear-gradient(to right, rgba(205, 133, 63, 0.8) 0%, rgba(160, 82, 45, 0.8) 100%); /* Sienna to brown transparency */
+  background: linear-gradient(
+    to right,
+    rgba(205, 133, 63, 0.8) 0%,
+    rgba(160, 82, 45, 0.8) 100%
+  ); /* Sienna to brown transparency */
 }
 
 /* Lotus flower icon */
@@ -157,19 +175,19 @@ hr {
 
 #about::before {
   content: "\2638"; /* Lotus flower symbol */
-  position: absolute;  
+  position: absolute;
   top: 20px;
   left: 20px;
   font-size: 50px;
-  color: #BC8F8F; /* Rosy brown */  
+  color: #bc8f8f; /* Rosy brown */
   opacity: 0.2;
   z-index: -1;
 }
 
 /* Bamboo-style contact form */
 #contact .form-control {
-  background-color: #FFF8DC; /* Cornsilk */
-  border: 1px solid #8B4513; /* Saddle brown */  
+  background-color: #fff8dc; /* Cornsilk */
+  border: 1px solid #8b4513; /* Saddle brown */
 }
 
 /* Om symbol social icons */
@@ -178,8 +196,8 @@ hr {
 }
 
 #contact .social i.fa:hover {
-  color: #D2691E; /* Chocolate */  
-  background: #FFF8DC; /* Cornsilk */
+  color: #d2691e; /* Chocolate */
+  background: #fff8dc; /* Cornsilk */
 }
 
 /* Full-screen sections and snap scrolling */
@@ -196,14 +214,14 @@ section {
 /* Responsive styles */
 @media (max-width: 768px) {
   h2 {
-    font-size: 28px;  
+    font-size: 28px;
   }
-  
+
   h3 {
     font-size: 20px;
   }
-  
+
   p {
-    font-size: 14px;  
+    font-size: 14px;
   }
 }
