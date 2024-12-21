@@ -1,0 +1,653 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <!-- Enhanced background gradient -->
+    <linearGradient id="mysticGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0f2e;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#0d0616;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#050208;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow filters with different intensities -->
+    <filter id="intenseglow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feFlood flood-color="#FFA500" flood-opacity="0.5" result="orangeLight"/>
+      <feComposite in="orangeLight" in2="coloredBlur" operator="in" result="orangeGlow"/>
+      <feMerge>
+        <feMergeNode in="orangeGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feFlood flood-color="#FFFF00" flood-opacity="0.3" result="yellowLight"/>
+      <feComposite in="yellowLight" in2="coloredBlur" operator="in" result="yellowGlow"/>
+      <feMerge>
+        <feMergeNode in="yellowGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Connecting energy path -->
+    <path id="energyPath" d="M0,0 C30,-20 -30,-40 0,-60 C30,-80 -30,-100 0,-120"/>
+  
+  
+      <!-- Enhanced gradients -->
+    <linearGradient id="mysticGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D1C54;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#1A0B2E;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#0D0616;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Sacred geometry patterns -->
+    <pattern id="flowerOfLife" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5">
+        <animate attributeName="stroke-opacity"
+                 values="0.1;0.3;0.1"
+                 dur="5s"
+                 repeatCount="indefinite"/>
+      </circle>
+      <circle cx="40" cy="20" r="10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+      <circle cx="20" cy="40" r="10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+    </pattern>
+
+    <!-- Enhanced glow effects -->
+    <filter id="mysticGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feFlood flood-color="#9F7AEA" flood-opacity="0.3" result="mysticalLight"/>
+      <feComposite in="mysticalLight" in2="coloredBlur" operator="in" result="mysticalGlow"/>
+      <feMerge>
+        <feMergeNode in="mysticalGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Spiral path for energy flow -->
+    <path id="spiralPath" d="M0,0 C30,-20 -30,-40 0,-60 C30,-80 -30,-100 0,-120" />
+  <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Animation definitions -->
+    <animate id="fadeIn" 
+            attributeName="opacity"
+            from="0" to="1"
+            dur="0.5s"
+            begin="0s"
+            fill="freeze" />
+            
+    <!-- Floating animation -->
+    <animate id="float"
+            attributeName="transform"
+            values="translate(0,0); translate(0,-5); translate(0,0)"
+            dur="3s"
+            repeatCount="indefinite" />
+
+  
+  </defs>
+
+  <!-- Background -->
+  <circle cx="100" cy="100" r="90" fill="url(#mysticGradient)">
+    <animate attributeName="r"
+             values="88;92;88"
+             dur="7s"
+             repeatCount="indefinite" />
+  </circle>
+
+  <!-- Base connecting lines -->
+  <g transform="translate(100,100)" opacity="0.3">
+    <path d="M-60,0 L60,0" stroke="#FFA500" stroke-width="0.5">
+      <animate attributeName="opacity"
+               values="0.3;0.6;0.3"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- First Level - Triangular Base -->
+  <g transform="translate(50,120)">
+    <path d="M0,0 L20,-34.6 L40,0 Z" 
+          fill="none" 
+          stroke="#FFA500" 
+          stroke-width="2"
+          filter="url(#intenseglow)">
+      <animate attributeName="stroke-opacity"
+               values="0.4;1;0.4"
+               dur="3s"
+               repeatCount="indefinite"/>
+      <animate attributeName="stroke-dasharray"
+               values="0,200;200,0"
+               dur="2s"
+               begin="0s"
+               fill="freeze"/>
+    </path>
+    <!-- Energy flow -->
+    <path d="M20,-17.3 L20,-40" 
+          stroke="#FFA500" 
+          stroke-width="2"
+          opacity="0">
+      <animate attributeName="opacity"
+               values="0;1;0.7"
+               dur="2s"
+               begin="1.5s"
+               fill="freeze"/>
+    </path>
+  </g>
+
+  <!-- Second Level - Larger Triangle -->
+  <g transform="translate(100,100)">
+    <path d="M-30,0 L0,-51.96 L30,0 Z" 
+          fill="none" 
+          stroke="#FFA500" 
+          stroke-width="2.5"
+          filter="url(#intenseglow)">
+      <animate attributeName="stroke-opacity"
+               values="0.4;1;0.4"
+               dur="3s"
+               begin="0.5s"
+               repeatCount="indefinite"/>
+      <animate attributeName="stroke-dasharray"
+               values="0,300;300,0"
+               dur="2s"
+               begin="0.5s"
+               fill="freeze"/>
+    </path>
+    <!-- Energy flow -->
+    <path d="M0,-25.98 L0,-60" 
+          stroke="#FFA500" 
+          stroke-width="2"
+          opacity="0">
+      <animate attributeName="opacity"
+               values="0;1;0.7"
+               dur="2s"
+               begin="2s"
+               fill="freeze"/>
+    </path>
+  </g>
+
+  <!-- Third Level - Circle -->
+  <g transform="translate(150,80)">
+    <circle cx="0" cy="0" r="20"
+            fill="none"
+            stroke="#FFFF00"
+            stroke-width="3"
+            filter="url(#softglow)">
+      <animate attributeName="stroke-opacity"
+               values="0.4;1;0.4"
+               dur="3s"
+               begin="1s"
+               repeatCount="indefinite"/>
+      <animate attributeName="r"
+               values="18;22;18"
+               dur="4s"
+               repeatCount="indefinite"/>
+      <animate attributeName="stroke-dasharray"
+               values="0,200;200,0"
+               dur="2s"
+               begin="1s"
+               fill="freeze"/>
+    </circle>
+  </g>
+
+  <!-- Connecting Energy Streams -->
+  <g transform="translate(100,100)">
+    <!-- Pulsing connection points -->
+    <circle cx="-50" cy="0" r="3" fill="#FFA500" filter="url(#intenseglow)">
+      <animate attributeName="r"
+               values="2;4;2"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="3" fill="#FFA500" filter="url(#intenseglow)">
+      <animate attributeName="r"
+               values="2;4;2"
+               dur="2s"
+               begin="0.7s"
+               repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="-20" r="3" fill="#FFFF00" filter="url(#softglow)">
+      <animate attributeName="r"
+               values="2;4;2"
+               dur="2s"
+               begin="1.4s"
+               repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Energy Flow Lines -->
+  <g transform="translate(100,100)" stroke-width="0.5">
+    <path d="M-50,0 Q0,-20 50,-20" 
+          stroke="url(#mysticGradient)" 
+          fill="none"
+          opacity="0.3">
+      <animate attributeName="opacity"
+               values="0.3;0.6;0.3"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Ethereal Particles -->
+  <g>
+    <circle cx="75" cy="90" r="1" fill="#FFA500">
+      <animate attributeName="cy"
+               values="90;85;90"
+               dur="3s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values="0;1;0"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+    <circle cx="125" cy="70" r="1" fill="#FFFF00">
+      <animate attributeName="cy"
+               values="70;65;70"
+               dur="3s"
+               begin="1s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values="0;1;0"
+               dur="3s"
+               begin="1s"
+               repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+    <!-- Background with sacred geometry -->
+  <circle cx="100" cy="100" r="90" fill="url(#mysticGradient)">
+    <animate attributeName="r"
+             values="88;92;88"
+             dur="7s"
+             repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Flower of Life pattern overlay -->
+  <circle cx="100" cy="100" r="88" fill="url(#flowerOfLife)" opacity="0.3">
+    <animate attributeName="opacity"
+             values="0.2;0.4;0.2"
+             dur="10s"
+             repeatCount="indefinite" />
+  </circle>
+
+  <!-- Sri Yantra geometric base -->
+  <g transform="translate(100,100) scale(0.8)">
+    <path d="M0,-60 L52,30 L-52,30 Z" 
+          fill="none" 
+          stroke="rgba(255,255,255,0.1)" 
+          stroke-width="0.5">
+      <animate attributeName="stroke-opacity"
+               values="0.1;0.3;0.1"
+               dur="8s"
+               repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Chakra Energy Streams -->
+  <g transform="translate(50,100) scale(1,-1)">
+    <!-- Root Chakra (Muladhara) with Square symbol -->
+    <path d="M-10,-10 L10,-10 L10,10 L-10,10 Z" 
+          fill="none" 
+          stroke="#FF0000" 
+          stroke-width="2"
+          opacity="0"
+          filter="url(#mysticGlow)">
+      <animate attributeName="opacity"
+               values="0;1;0.7"
+               dur="3s"
+               begin="0s"
+               fill="freeze" />
+      <animate attributeName="stroke-dasharray"
+               values="0,1000;200,0"
+               dur="2s"
+               begin="0s"
+               fill="freeze" />
+    </path>
+    
+    <!-- Energy flow -->
+    <path d="M0,0 Q-10,-20 0,-40 Q10,-20 0,0" 
+          fill="none" 
+          stroke="#FF0000" 
+          stroke-width="3"
+          opacity="0.8"
+          filter="url(#mysticGlow)">
+      <animate attributeName="stroke-dashoffset"
+               values="1000;0"
+               dur="3s"
+               repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Sacral Chakra (Svadhisthana) with Crescent -->
+  <g transform="translate(100,100) scale(1,-1)">
+    <path d="M0,0 Q-20,-20 0,-40 Q20,-20 0,0" 
+          fill="none" 
+          stroke="#FF7F00" 
+          stroke-width="3"
+          opacity="0.8"
+          filter="url(#mysticGlow)">
+      <animate attributeName="stroke-dashoffset"
+               values="1000;0"
+               dur="3.5s"
+               repeatCount="indefinite" />
+    </path>
+    
+    <!-- Hidden Crescent -->
+    <path d="M-5,-30 A20,20 0 0,1 5,-30" 
+          fill="none" 
+          stroke="#FF7F00" 
+          stroke-width="2"
+          opacity="0.6">
+      <animate attributeName="opacity"
+               values="0.6;1;0.6"
+               dur="4s"
+               repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Solar Plexus (Manipura) with Triangle -->
+  <g transform="translate(150,100) scale(1,-1)">
+    <path d="M0,0 Q-25,-25 0,-50 Q25,-25 0,0" 
+          fill="none" 
+          stroke="#FFFF00" 
+          stroke-width="3"
+          opacity="0.8"
+          filter="url(#mysticGlow)">
+      <animate attributeName="stroke-dashoffset"
+               values="1000;0"
+               dur="4s"
+               repeatCount="indefinite" />
+    </path>
+    
+    <!-- Triangle Symbol -->
+    <path d="M0,-45 L8,-35 L-8,-35 Z" 
+          fill="none" 
+          stroke="#FFFF00" 
+          stroke-width="2"
+          opacity="0.6">
+      <animate attributeName="opacity"
+               values="0.6;1;0.6"
+               dur="5s"
+               repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Sacred Geometry Connectors -->
+  <g transform="translate(100,100)">
+    <circle r="40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5">
+      <animate attributeName="r"
+               values="38;42;38"
+               dur="6s"
+               repeatCount="indefinite" />
+    </circle>
+    <circle r="60" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5">
+      <animate attributeName="r"
+               values="58;62;58"
+               dur="7s"
+               repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Ethereal Particle Effects -->
+  <g>
+    <circle cx="50" cy="100" r="3" fill="#FF0000" filter="url(#mysticGlow)">
+      <animate attributeName="r"
+               values="2;4;2"
+               dur="3s"
+               repeatCount="indefinite" />
+      <animate attributeName="opacity"
+               values="0.7;1;0.7"
+               dur="3s"
+               repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="3" fill="#FF7F00" filter="url(#mysticGlow)">
+      <animate attributeName="r"
+               values="2;4;2"
+               dur="3s"
+               begin="1s"
+               repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="100" r="3" fill="#FFFF00" filter="url(#mysticGlow)">
+      <animate attributeName="r"
+               values="2;4;2"
+               dur="3s"
+               begin="2s"
+               repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Hidden Sanskrit Symbols (Stylized) -->
+  <g transform="translate(100,100)" opacity="0.15">
+    <path d="M-20,0 C-10,-10 10,-10 20,0" 
+          stroke="#fff" 
+          fill="none" 
+          stroke-width="0.5">
+      <animate attributeName="opacity"
+               values="0.1;0.3;0.1"
+               dur="8s"
+               repeatCount="indefinite" />
+    </path>
+  </g>
+
+    <!-- Root Chakra (Red) -->
+  <g transform="translate(50,100) scale(1,-1)">
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      values="50,100; 50,95; 50,100"
+                      dur="3s"
+                      repeatCount="indefinite"
+                      additive="sum" />
+    <path d="M0,0 Q-10,-20 0,-40 Q10,-20 0,0" 
+          fill="none" 
+          stroke="#FF0000" 
+          stroke-width="4"
+          opacity="0"
+          filter="url(#glow)">
+      <animate attributeName="opacity"
+               values="0;1"
+               dur="0.5s"
+               begin="0s"
+               fill="freeze" />
+      <animate attributeName="stroke-dasharray"
+               values="0,1000;200,0"
+               dur="1.5s"
+               begin="0s"
+               fill="freeze" />
+    </path>
+    <!-- Mirrored path -->
+    <path d="M0,0 Q-10,20 0,40 Q10,20 0,0" 
+          fill="none" 
+          stroke="#FF0000" 
+          stroke-width="4"
+          opacity="0"
+          filter="url(#glow)">
+      <animate attributeName="opacity"
+               values="0;1"
+               dur="0.5s"
+               begin="0.2s"
+               fill="freeze" />
+    </path>
+  </g>
+
+  <!-- Sacral Chakra (Orange) -->
+  <g transform="translate(100,100) scale(1,-1)">
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      values="100,100; 100,95; 100,100"
+                      dur="3s"
+                      begin="0.2s"
+                      repeatCount="indefinite"
+                      additive="sum" />
+    <path d="M0,0 Q-15,-30 0,-60 Q15,-30 0,0" 
+          fill="none" 
+          stroke="#FF7F00" 
+          stroke-width="4"
+          opacity="0"
+          filter="url(#glow)">
+      <animate attributeName="opacity"
+               values="0;1"
+               dur="0.5s"
+               begin="0.2s"
+               fill="freeze" />
+      <animate attributeName="stroke-dasharray"
+               values="0,1000;300,0"
+               dur="1.5s"
+               begin="0.2s"
+               fill="freeze" />
+    </path>
+    <!-- Mirrored path -->
+    <path d="M0,0 Q-15,30 0,60 Q15,30 0,0" 
+          fill="none" 
+          stroke="#FF7F00" 
+          stroke-width="4"
+          opacity="0"
+          filter="url(#glow)">
+      <animate attributeName="opacity"
+               values="0;1"
+               dur="0.5s"
+               begin="0.4s"
+               fill="freeze" />
+    </path>
+  </g>
+
+  <!-- Solar Plexus Chakra (Yellow) -->
+  <g transform="translate(150,100) scale(1,-1)">
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      values="150,100; 150,95; 150,100"
+                      dur="3s"
+                      begin="0.4s"
+                      repeatCount="indefinite"
+                      additive="sum" />
+    <path d="M0,0 Q-20,-40 0,-80 Q20,-40 0,0" 
+          fill="none" 
+          stroke="#FFFF00" 
+          stroke-width="4"
+          opacity="0"
+          filter="url(#glow)">
+      <animate attributeName="opacity"
+               values="0;1"
+               dur="0.5s"
+               begin="0.4s"
+               fill="freeze" />
+      <animate attributeName="stroke-dasharray"
+               values="0,1000;400,0"
+               dur="1.5s"
+               begin="0.4s"
+               fill="freeze" />
+    </path>
+    <!-- Mirrored path -->
+    <path d="M0,0 Q-20,40 0,80 Q20,40 0,0" 
+          fill="none" 
+          stroke="#FFFF00" 
+          stroke-width="4"
+          opacity="0"
+          filter="url(#glow)">
+      <animate attributeName="opacity"
+               values="0;1"
+               dur="0.5s"
+               begin="0.6s"
+               fill="freeze" />
+    </path>
+  </g>
+
+  <!-- Pulsing dots with chakra colors -->
+  <circle cx="50" cy="100" r="4" fill="#FF0000" filter="url(#glow)">
+    <animate attributeName="r"
+             values="4;6;4"
+             dur="2s"
+             repeatCount="indefinite" />
+  </circle>
+  <circle cx="100" cy="100" r="4" fill="#FF7F00" filter="url(#glow)">
+    <animate attributeName="r"
+             values="4;6;4"
+             dur="2s"
+             begin="0.3s"
+             repeatCount="indefinite" />
+  </circle>
+  <circle cx="150" cy="100" r="4" fill="#FFFF00" filter="url(#glow)">
+    <animate attributeName="r"
+             values="4;6;4"
+             dur="2s"
+             begin="0.6s"
+             repeatCount="indefinite" />
+  </circle>
+
+
+  <!-- Three figures representing different skill levels -->
+  <!-- Beginner -->
+  <g transform="translate(50,100)">
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      values="50,100; 50,95; 50,100"
+                      dur="3s"
+                      repeatCount="indefinite" />
+    <path d="M0,0 Q-10,-20 0,-40 Q10,-20 0,0" 
+          fill="none" 
+          stroke="#4F46E5" 
+          stroke-width="4"
+          opacity="0">
+      <animate attributeName="opacity"
+               values="0;1"
+               dur="0.5s"
+               begin="0s"
+               fill="freeze" />
+      <animate attributeName="stroke-dasharray"
+               values="0,1000;200,0"
+               dur="1.5s"
+               begin="0s"
+               fill="freeze" />
+    </path>
+  </g>
+
+  <!-- Intermediate -->
+  <g transform="translate(100,100)">
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      values="100,100; 100,95; 100,100"
+                      dur="3s"
+                      begin="0.2s"
+                      repeatCount="indefinite" />
+    <path d="M0,0 Q-15,-30 0,-60 Q15,-30 0,0" 
+          fill="none" 
+          stroke="#4F46E5" 
+          stroke-width="4"
+          opacity="0">
+      <animate attributeName="opacity"
+               values="0;1"
+               dur="0.5s"
+               begin="0.2s"
+               fill="freeze" />
+      <animate attributeName="stroke-dasharray"
+               values="0,1000;300,0"
+               dur="1.5s"
+               begin="0.2s"
+               fill="freeze" />
+    </path>
+  </g>
+
+  
+  <!-- Pulsing dots at the base -->
+  <circle cx="50" cy="100" r="4" fill="#4F46E5">
+    <animate attributeName="r"
+             values="4;6;4"
+             dur="2s"
+             repeatCount="indefinite" />
+  </circle>
+  <circle cx="100" cy="100" r="4" fill="#4F46E5">
+    <animate attributeName="r"
+             values="4;6;4"
+             dur="2s"
+             begin="0.3s"
+             repeatCount="indefinite" />
+  </circle>
+  <circle cx="150" cy="100" r="4" fill="#4F46E5">
+    <animate attributeName="r"
+             values="4;6;4"
+             dur="2s"
+             begin="0.6s"
+             repeatCount="indefinite" />
+  </circle>
+
+
+</svg>

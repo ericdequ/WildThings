@@ -6,7 +6,6 @@ import { NextUIProvider } from "@nextui-org/react";
 import { extendTheme } from "@chakra-ui/react";
 import { ScrollShadow } from "@nextui-org/react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 
 const queryClient = new QueryClient();
 
@@ -19,12 +18,6 @@ const theme = extendTheme({
     },
   },
 });
-
-// Dynamically import React Query Devtools
-const ReactQueryDevtoolsComponent = dynamic(
-  () => import("react-query/devtools").then((mod) => mod.ReactQueryDevtools),
-  { ssr: false },
-);
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -44,9 +37,6 @@ function MyApp({ Component, pageProps }) {
             <CSSReset />
             <QueryClientProvider client={queryClient}>
               <Component {...pageProps} />
-              {process.env.NODE_ENV !== "production" && (
-                <ReactQueryDevtoolsComponent />
-              )}
             </QueryClientProvider>
           </ChakraProvider>
         </ScrollShadow>

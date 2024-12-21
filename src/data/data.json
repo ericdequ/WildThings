@@ -98,9 +98,19 @@
   ],
   "Team": [
     {
-      "img": "https://example.com/julia-s.jpg",
-      "name": "Julia S.",
+      "img": "/instructor-1.jpg",
+      "name": "Holly deQuevedo",
       "job": "Founder & Lead Instructor"
+    },
+    {
+      "img": "/instructor-2.jpg",
+      "name": "Alex deQuevedo",
+      "job": "Technical & Emotional & Physical Support"
+    },
+    {
+      "img": "/instructor-3.jpg",
+      "name": "Eric deQuevedo",
+      "job": "Hollistic Technology Guru"
     }
   ],
   "Contact": {
@@ -113,22 +123,22 @@
   },
   "Features": [
     {
-      "icon": "fa fa-area-chart",
+      "icon": "fa fa-feature1",
       "title": "For All Levels",
       "text": "Classes designed for yogis of every experience level."
     },
     {
-      "icon": "fa fa-heartbeat",
+      "icon": "fa fa-feature1",
       "title": "Mind-Body Health",
       "text": "Holistic approach to physical and mental well-being."
     },
     {
-      "icon": "fa fa-globe",
+      "icon": "fa fa-feature1",
       "title": "Diverse Styles",
       "text": "Explore a wide range of yoga traditions and practices."
     },
     {
-      "icon": "fa fa-users",
+      "icon": "fa fa-feature1",
       "title": "Supportive Community",
       "text": "A welcoming space to connect with fellow yogis."
     }

@@ -96,7 +96,7 @@ const Classes = ({ data }) => {
             transition={{ duration: 0.8 }}
           >
             <MotionImage
-              src="/logo.png"
+              src="/circlelogo.png"
               alt="Warriors and Wildthings Yoga Logo"
               w={{ base: "120px", md: "160px" }}
               h="auto"

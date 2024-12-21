@@ -9,14 +9,16 @@ import { useInView } from "react-intersection-observer";
 import About from "../components/about";
 import Contact from "../components/contact";
 import Classes from "../components/classes";
+import Classess from "../components/classess";
 import Header from "../components/header";
 import Navigation from "../components/navigation";
+import Navigationn from "../components/navigationn";
+import Navigationnn from "../components/navigationnn";
+import Navigationnnn from "../components/navigationnnn";
 import SEOComponent from "../components/SEOComponent";
 import Services from "../components/services";
 
 import data from "../data/data.json";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   useEffect(() => {
@@ -36,6 +38,7 @@ export default function Home() {
 
       {/* Background Image */}
       <Box
+      className="w-full h-full flex flex-col"
         bgImage="url('/yoga-bg.webp')"
         bgPosition="center"
         bgSize="cover"
@@ -45,7 +48,7 @@ export default function Home() {
         flexDirection="column"
       >
         <AnimateSection>
-          <Navigation />
+          <Navigationnn />
         </AnimateSection>
         {/* Header Crown */}
 
@@ -54,8 +57,8 @@ export default function Home() {
         </AnimateSection>
 
         {/* Features (Sliding in from the left) throat */}
-        <AnimateSection from="left">
-          <Classes data={data.Features} />
+        <AnimateSection from="left" id="classes">
+          <Classess data={data.Features} />
         </AnimateSection>
 
         {/* About Section heart */}

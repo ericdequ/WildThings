@@ -9,17 +9,17 @@ import {
 } from "@chakra-ui/react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaCrown, FaPalette, FaTools, FaGem } from "react-icons/fa";
+import { FaCrown, FaPalette, FaTools, FaGem, FaOm, FaSpa, FaYinYang, FaLeaf, FaHiking  } from "react-icons/fa";
 
 const MotionBox = motion(Box);
 const MotionGrid = motion(Grid);
 const MotionFlex = motion(Flex);
 
 const iconMapping = {
-  "fa fa-feature1": FaCrown,
-  "fa fa-feature2": FaPalette,
-  "fa fa-feature3": FaTools,
-  "fa fa-feature4": FaGem,
+  "fa fa-feature1": FaOm,
+  "fa fa-feature2": FaSpa,
+  "fa fa-feature3": FaYinYang,
+  "fa fa-feature4": FaHiking,
 };
 
 const Features = ({ data }) => {

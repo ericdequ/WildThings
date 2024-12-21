@@ -21,7 +21,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: "Monotype Corsiva", sans-serif;
+  font-family: 'Magical', sans-serif;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -209,6 +209,10 @@ body {
 section {
   height: 100vh;
   scroll-snap-align: start;
+}
+
+.font-magical {
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 /* Responsive styles */
