@@ -6,17 +6,17 @@ import "aos/dist/aos.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import About from "../components/about";
+import About from "../About/about";
 import Contact from "../components/contact";
-import Classes from "../components/classes";
-import Classess from "../components/classess";
-import Header from "../components/header";
-import Navigation from "../components/navigation";
-import Navigationn from "../components/navigationn";
-import Navigationnn from "../components/navigationnn";
-import Navigationnnn from "../components/navigationnnn";
-import SEOComponent from "../components/SEOComponent";
-import Services from "../components/services";
+import Classes from "../Classes/classes";
+import Classess from "../Classes/classess";
+import Header from "../HeadER/header";
+import Navigation from "../Navigation/navigation";
+import Navigationn from "../Navigation/navigationn";
+import Navigationnn from "../Navigation/navigationnn";
+import Navigationnnn from "../Navigation/navigationnnn";
+import SEOComponent from "../SEOComponent";
+import Services from "../services";
 
 import data from "../data/data.json";
 
