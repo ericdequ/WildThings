@@ -6,19 +6,19 @@ import "aos/dist/aos.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import About from "../About/about";
-import Contact from "../components/contact";
-import Classes from "../Classes/classes";
-import Classess from "../Classes/classess";
-import Header from "../Header/header";
-import Navigation from "../Navigation/navigation";
-import Navigationn from "../Navigation/navigationn";
-import Navigationnn from "../Navigation/navigationnn";
-import Navigationnnn from "../Navigation/navigationnnn";
-import SEOComponent from "../SEOComponent";
-import Services from "../services";
-
+import About from "../components/About/about";
+import Contact from "../components/Contact/contact";
+import Classes from "../components/Classes/classes";
+import Classess from "../components/Classes/classess";
+import Header from "../components/Header/header";
+import Navigation from "../components/Navigation/navigation";
+import Navigationn from "../components/Navigation/navigationn";
+import Navigationnn from "../components/Navigation/navigationnn";
+import Navigationnnn from "../components/Navigation/navigationnnn";
+import SEOComponent from "../components/SEOComponent";
+import Services from "../components/services";
 import data from "../data/data.json";
+import TestimonialSlider from "../components/Testimonial/Slider";
 
 export default function Home() {
   useEffect(() => {
@@ -69,6 +69,10 @@ export default function Home() {
         {/* Services (Sliding in from the right) yellow*/}
         <AnimateSection from="right">
           <Services data={data.Services} />
+        </AnimateSection>
+
+        <AnimateSection from="right">
+          <TestimonialSlider clientTestimonials={data.Testimonials} />
         </AnimateSection>
 
         {/* Contact Section */}
